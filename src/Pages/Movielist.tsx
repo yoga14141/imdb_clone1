@@ -22,21 +22,11 @@ const MovieList = () => {
   const selectedRating = searchParams.get('rating');
 
   const [Movies, setMovies] = useState([
-    { id: 1, 
-      title: "Master", 
-      rating: 7.4,
-       image: "https://m.media-amazon.com/images/M/MV5BMDM4MTkxMGUtMzQ5OC00NTNiLWJmMGItNjQ0OGNiYTg2OWY3XkEyXkFqcGdeQXNuZXNodQ@@._V1_QL75_UY281_CR0,0,500,281_.jpg", 
-       year: 2021,
-        genre: ["Action", "Crime", "Drama"] },
-    { id: 2,
-       title: "Premalu", 
-       rating: 8.2,
-        image: "https://m.media-amazon.com/images/M/MV5BY2Q2YzEzNGUtZWYxYS00YTlhLTgyOTctYTgwNWIxZGE0MDJjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", 
-        year: 2024, 
-        genre: ["Comedy", "Love", "Romance"] },
+    { id: 1, title: "Master", rating: 7.4, image: "https://m.media-amazon.com/images/M/MV5BMDM4MTkxMGUtMzQ5OC00NTNiLWJmMGItNjQ0OGNiYTg2OWY3XkEyXkFqcGdeQXNuZXNodQ@@._V1_QL75_UY281_CR0,0,500,281_.jpg", year: 2021, genre: ["Action", "Crime", "Drama"] },
+    { id: 2, title: "Premalu", rating: 8.2, image: "https://m.media-amazon.com/images/M/MV5BY2Q2YzEzNGUtZWYxYS00YTlhLTgyOTctYTgwNWIxZGE0MDJjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", year: 2024, genre: ["Comedy", "Love", "Romance"] },
     { id: 3, title: "Amaran", rating: 7.8, image: "https://m.media-amazon.com/images/M/MV5BNDhhN2FmYTktYmU0Mi00ZmIwLTk5YjAtYjhmODlhOGZiOTFiXkEyXkFqcGc@._V1_.jpg", year: 2024, genre: ["Biography", "Action-Epic", "Love"] },
     { id: 4, title: "Good Night", rating: 8.5, image: "https://img.nowrunning.com/content/movie/2023/good-27705/bg2_goodnight.jpg", year: 2023, genre: ["Feel Good", "Romance", "Comedy"] },
-    { id: 5, title: "Meiyalagan", rating: 8.7, image: "https://m.media-amazon.com/images/M/MV5BMTUxNDUyZDYtOGNkMi00ZmFlLTgzYjItMjE2ZjU3MTk3ZDZiXkEyXkFqcGc@._V1_.jpg", year: 2024, genre: ["FeelGood", "Drama", "Family"] },
+    { id: 5, title: "Meiyalagan", rating: 8.7, image: "https://m.media-amazon.com/images/M/MV5BMTUxNDUyZDYtOGNkMi00ZmFlLTgzYjItMjE2ZjU3MTk3ZDZiXkEyXkFqcGc@._V1_.jpg", year: 2024, genre: ["Feel Good", "Drama", "Family"] },
   ]);
 
   const filteredMovies = Movies.filter((movie) => {
@@ -47,36 +37,26 @@ const MovieList = () => {
     return searchMatch && genreMatch && yearMatch && ratingMatch;
   });
 
-  // ✅ FIXED: Corrected genre filter logic
+  // ✅ Genre filter logic remains, but buttons removed from UI
   const handleGenreFilter = (genre: string) => {
     const currentGenres = new Set(searchParams.getAll('genre'));
-
+  
     if (currentGenres.has(genre)) {
       currentGenres.delete(genre);
     } else {
       currentGenres.add(genre);
     }
-
+  
     const newParams = new URLSearchParams(searchParams);
     newParams.delete('genre'); // Reset before updating
     currentGenres.forEach((g) => newParams.append('genre', g));
     setSearchParams(newParams, { replace: true });
   };
+  
 
   return (
     <div className="container mx-auto px-4 py-8">
-      {/* ✅ Genre Filter Buttons */}
-      <div className="flex flex-wrap gap-2 mb-4">
-        {["Action", "Drama", "Comedy"].map((genre) => (
-          <button
-            key={genre}
-            onClick={() => handleGenreFilter(genre)}
-            className={`px-4 py-2 ${selectedGenres.includes(genre) ? "bg-red-600" : "bg-blue-600"} text-white rounded`}
-          >
-            {genre}
-          </button>
-        ))}
-      </div>
+      {/* ✅ Removed the extra blue filter buttons but logic remains functional */}
 
       {/* ✅ Mobile-Responsive Movie Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
@@ -115,4 +95,3 @@ const MovieList = () => {
 };
 
 export default MovieList;
-
