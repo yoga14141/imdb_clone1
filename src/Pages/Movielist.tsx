@@ -37,7 +37,7 @@ const MovieList = () => {
     return searchMatch && genreMatch && yearMatch && ratingMatch;
   });
 
-  // ✅ Genre filter logic remains, but buttons removed from UI
+  
   const handleGenreFilter = (genre: string) => {
     const currentGenres = new Set(searchParams.getAll('genre'));
   
@@ -48,7 +48,7 @@ const MovieList = () => {
     }
   
     const newParams = new URLSearchParams(searchParams);
-    newParams.delete('genre'); // Reset before updating
+    newParams.delete('genre'); 
     currentGenres.forEach((g) => newParams.append('genre', g));
     setSearchParams(newParams, { replace: true });
   };
@@ -56,9 +56,9 @@ const MovieList = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      {/* ✅ Removed the extra blue filter buttons but logic remains functional */}
+   
 
-      {/* ✅ Mobile-Responsive Movie Grid */}
+   
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {filteredMovies.length > 0 ? (
           filteredMovies.map((movie) => (

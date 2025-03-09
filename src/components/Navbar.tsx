@@ -43,7 +43,7 @@ const Navbar = () => {
       setSelectedRating(value === selectedRating ? null : value);
     }
 
-    setTimeout(() => applyFilters(), 10); // Small delay to ensure state updates before applying filters
+    setTimeout(() => applyFilters(), 10);
   };
 
   const applyFilters = () => {
@@ -76,7 +76,7 @@ const Navbar = () => {
             <span className="text-xl font-bold text-white">MovieDB</span>
           </Link>
 
-          {/* Desktop Navbar */}
+ 
           <div className="hidden md:flex items-center gap-8">
             <div className="relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-zinc-400 w-5 h-5" />
@@ -115,13 +115,12 @@ const Navbar = () => {
             )}
           </div>
 
-          {/* Mobile Menu Button */}
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden text-zinc-300 hover:text-yellow-500">
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
 
-        {/* Mobile Dropdown Menu */}
+   
         {isMenuOpen && (
           <div className="md:hidden flex flex-col gap-4 p-4 bg-black/90 rounded-lg">
             {navItems.map(item => (
@@ -148,7 +147,7 @@ const Navbar = () => {
           </div>
         )}
 
-        {/* Filters Section */}
+ 
         <div className="flex flex-wrap gap-2 py-4">
           <div className="flex items-center gap-2">
             <span className="text-zinc-300">Genres:</span>
