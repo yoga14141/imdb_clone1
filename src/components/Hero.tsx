@@ -5,13 +5,24 @@ import { Link } from "react-router-dom";
 const featuredMovies = [
   {
     id: 1,
-    title: "Dune: Part Two",
-    rating: 8.8,
-    releaseDate: "March 1, 2024",
+    title: "Master",
+    rating: 7.4,
+    releaseDate: "January 13, 2021",
     description:
-      "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.",
+      "An alcoholic professor is sent to a juvenile school, where he clashes with a gangster who uses the school children for criminal activities.",
     image:
-      "https://images.unsplash.com/photo-1534809027769-b00d750a6bac?auto=format&fit=crop&w=2000&q=80",
+      "https://live.staticflickr.com/65535/51243613866_200567d84f_b.jpg?auto=format&fit=crop&w=2000&q=80",
+  },
+  {
+    id: 2,
+    title: "Premalu",
+    rating: 7.8,
+    releaseDate: "February 9, 2024",
+    description:
+      "Sachin's quest for love takes unexpected turns, creating a laughter-filled love triangle.",
+    image:
+      "https://static.toiimg.com/thumb/msid-105647632,width-1280,height-720,resizemode-4/105647632.jpg?auto=format&fit=crop&w=2000&q=80",
+
   },
   {
     id: 2,
@@ -22,6 +33,7 @@ const featuredMovies = [
       "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb. A gripping tale of genius, conscience, and the price of scientific progress.",
     image:
       "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=2000&q=80",
+
   },
 ];
 
