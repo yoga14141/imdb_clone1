@@ -8,69 +8,69 @@ const Home = () => {
   const trendingMovies = [
     {
       id: 1,
-      title: "Master",
-      rating: 7.4,
+      title: "Dune: Part Two",
+      rating: 8.8,
       image:
-        "https://m.media-amazon.com/images/M/MV5BMDM4MTkxMGUtMzQ5OC00NTNiLWJmMGItNjQ0OGNiYTg2OWY3XkEyXkFqcGdeQXNuZXNodQ@@._V1_.jpg?auto=format&fit=crop&w=800&q=80",
-      year: 2021,
-      genre: ["Action", "Drama", "Crime"],
+        "https://images.unsplash.com/photo-1534809027769-b00d750a6bac?auto=format&fit=crop&w=800&q=80",
+      year: 2024,
+      genre: ["Action", "Adventure", "Sci-Fi"],
     },
     {
       id: 2,
-      title: "Premalu",
-      rating: 8.2,
+      title: "Poor Things",
+      rating: 8.4,
       image:
-        "https://m.media-amazon.com/images/M/MV5BY2Q2YzEzNGUtZWYxYS00YTlhLTgyOTctYTgwNWIxZGE0MDJjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg?auto=format&fit=crop&w=800&q=80",
-      year: 2024,
-      genre: ["Drama", "Comedy", "Love"],
+        "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=800&q=80",
+      year: 2023,
+      genre: ["Comedy", "Drama", "Romance"],
     },
     {
       id: 3,
-      title: "Amaran",
-      rating: 7.0,
+      title: "Oppenheimer",
+      rating: 8.9,
       image:
-        "https://m.media-amazon.com/images/M/MV5BNDhhN2FmYTktYmU0Mi00ZmIwLTk5YjAtYjhmODlhOGZiOTFiXkEyXkFqcGc@._V1_.jpg?auto=format&fit=crop&w=800&q=80",
-      year: 2024,
-      genre: ["Action-epic", "Biography", "Love"],
+        "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=800&q=80",
+      year: 2023,
+      genre: ["Biography", "Drama", "History"],
     },
     {
       id: 4,
-      title: "Good Night",
+      title: "The Batman",
       rating: 8.5,
       image:
-        "https://img.nowrunning.com/content/movie/2023/good-27705/bg2_goodnight.jpg?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?auto=format&fit=crop&w=800&q=80",
       year: 2024,
-      genre: ["Love", "Drama", "Comedy"],
+      genre: ["Action", "Crime", "Drama"],
     },
     {
       id: 5,
-      title: "Premalu",
-      rating: 7.8,
+      title: "Killers of the Flower Moon",
+      rating: 8.7,
       image:
-        "https://static.toiimg.com/thumb/msid-105647632,width-1280,height-720,resizemode-4/105647632.jpg?auto=format&fit=crop&w=800&q=80",
-      year: 2024,
-      genre: ["Love", "Romance", "Comedy"],
+        "https://images.unsplash.com/photo-1533928298208-27ff66555d8d?auto=format&fit=crop&w=800&q=80",
+      year: 2023,
+      genre: ["Crime", "Drama", "History"],
     },
   ];
 
   const upcomingMovies = [
     {
       id: 6,
-      title: "Parasakthi",
-      rating: 8.0,
+      title: "Deadpool 3",
+      rating: 9.1,
       image:
-        "https://static.moviecrow.com/gallery/20250130/241316-Parasakthi%20Sivakarthikeyan%20Sudha%20Kongara%20(1).jpg?auto=format&fit=crop&w=800&q=80",
-      year: 2026,
-      genre: ["Action", "Thriller", "Adventure"],
+        "https://images.unsplash.com/photo-1535016120720-40c646be5580?auto=format&fit=crop&w=800&q=80",
+      year: 2024,
+      genre: ["Action", "Comedy", "Adventure"],
     },
     {
       id: 8,
-      title: "Demonty Colony : Part-1",
-      rating: 7.0,
+      title: "Kingdom of the Planet of the Apes",
+      rating: 8.3,
       image:
-        "https://m.media-amazon.com/images/M/MV5BYjEzMzYyOWQtYWUwMy00NzNhLTg0OTEtOWFhMjFhYTRhYTk5XkEyXkFqcGc@._V1_.jpg?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1533973860717-d49dfd14cf64?auto=format&fit=crop&w=800&q=80",
       year: 2024,
-      genre: ["Horror", "Thriller", "Comedy"],
+      genre: ["Action", "Adventure", "Drama"],
     },
   ];
 

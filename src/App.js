@@ -1,28 +1,27 @@
-import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar.tsx";
-import { BrowserRouter, Routes ,Route} from "react-router-dom";
 import Home from "./Pages/Home.tsx";
 import MovieList from "./Pages/Movielist.tsx";
-import { AuthProvider } from "./AuthContext.tsx";
-import Moviedetails from "./Pages/Moviedetails.tsx";
+import MovieDetails from "./Pages/Moviedetails.tsx";
 import Toprated from "./Pages/Toprated.jsx";
 import Actordetails from "./Pages/Actordetails.tsx";
+import Profile from "./Pages/Profile.tsx";  // ✅ Ensure Profile page is imported
+
 function App() {
   return (
-    <AuthProvider>
-    <BrowserRouter>
+    <Router>
       <div className="min-h-screen bg-black text-white">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/movies" element={<MovieList/>}/>
-          <Route path="/movie/:id" element={<Moviedetails/>}/>
-          <Route path="/actor/:id" element={<Actordetails/>}/>
-          <Route path="/top-rated" element={<Toprated/>}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/movies" element={<MovieList />} />
+          <Route path="/movie/:id" element={<MovieDetails />} />
+          <Route path="/actor/:id" element={<Actordetails />} />
+          <Route path="/top-rated" element={<Toprated />} />
+          <Route path="/profile" element={<Profile />} />  {/* ✅ Profile Page Route */}
         </Routes>
       </div>
-    </BrowserRouter>
-    </AuthProvider>
+    </Router>
   );
 }
 

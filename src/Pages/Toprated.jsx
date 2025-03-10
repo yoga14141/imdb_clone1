@@ -7,31 +7,31 @@ const Toprated = () => {
   const movies = [
     {
       id: 1,
-      title: "Good Night",
-      rating: 7.7,
+      title: "The Shawshank Redemption",
+      rating: 9.3,
       image:
-        "https://m.media-amazon.com/images/S/pv-target-images/29c55aa980639b2ff4cb59682b98b7b0ecf3c1c151fae56bdca5e03ef91165c1.jpg?auto=format&fit=crop&w=800&q=80",
-      year: 2023,
+        "https://images.unsplash.com/photo-1534809027769-b00d750a6bac?auto=format&fit=crop&w=800&q=80",
+      year: 1994,
       votes: "2.8M",
       rank: 1,
     },
     {
       id: 2,
-      title: "Meiyalagan",
-      rating: 8.2,
+      title: "The Godfather",
+      rating: 9.2,
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf6aufDkjJIoiTYpcsDJoDVutFrJ3GFM2E-w&s?auto=format&fit=crop&w=800&q=80",
-      year: 2024,
+        "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=800&q=80",
+      year: 1972,
       votes: "2.1M",
       rank: 2,
     },
     {
       id: 3,
-      title: "Lubber Bandhu",
-      rating: 8.2,
+      title: "The Dark Knight",
+      rating: 9.0,
       image:
-        "https://m.media-amazon.com/images/M/MV5BZjRmN2FmZTAtYzhiNy00ZDU4LTgwNzYtN2EzYTg2OTc1OGZiXkEyXkFqcGc@._V1_.jpg?auto=format&fit=crop&w=800&q=80",
-      year: 2024,
+        "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=800&q=80",
+      year: 2008,
       votes: "2.7M",
       rank: 3,
     },

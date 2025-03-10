@@ -7,35 +7,35 @@ const Actordetails = () => {
   const actors = [
     {
       id: 1,
-      name: "Joseph Vijay",
-      birthDate: "June 22, 1974",
-      birthPlace: "Madras,Tamilnadu,India",
-      nationality: "Indian",
-      height: "5′ 9¾″ (1.77 m)",
+      name: "Timothée Chalamet",
+      birthDate: "December 27, 1995",
+      birthPlace: "New York City, New York, USA",
+      nationality: "American-French",
+      height: "5' 10\" (1.78 m)",
       biography:
-        "Joseph Vijay Chandrasekhar (born 22 June 1974), known mononymously as Vijay, is an Indian actor, dancer, playback singer and philanthropist who works predominantly in Tamil cinema and also appeared in other Indian languages films. Referred to by fans and media as Thalapathy (commander), Vijay is the highest paid actor in Tamil cinema. ",
+        "Timothée Hal Chalamet is an American actor. He has received various accolades, including nominations for an Academy Award, two Golden Globe Awards, and three BAFTA Film Awards. Born and raised in New York City, he began his career on the stage and in television productions, appearing in the drama series Homeland in 2012.",
       image:
-        "https://m.media-amazon.com/images/I/71qb1LEtHdL._AC_UF1000,1000_QL80_.jpg",
+        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80",
       coverImage:
-        "https://m.media-amazon.com/images/I/71qb1LEtHdL._AC_UF1000,1000_QL80_.jpg",
+        "https://images.unsplash.com/photo-1492446845049-9c50cc313f00?auto=format&fit=crop&w=2000&q=80",
       awards: [
         {
-          name: "Filmfare Award Nomination",
-          year: 2015,
-          category: "Best Actor",
-          film: "Kathi",
-        },
-        {
-          name: "Merit Award Nomination",
-          year: 2022,
-          category: "Mass Hero",
-          film: "Beast",
-        },
-        {
-          name: "National Film Award,UK",
+          name: "Academy Award Nomination",
           year: 2018,
           category: "Best Actor",
-          film: "Mersal",
+          film: "Call Me by Your Name",
+        },
+        {
+          name: "Golden Globe Nomination",
+          year: 2018,
+          category: "Best Actor - Drama",
+          film: "Call Me by Your Name",
+        },
+        {
+          name: "BAFTA Nomination",
+          year: 2018,
+          category: "Best Actor",
+          film: "Call Me by Your Name",
         },
       ],
       socialMedia: {
@@ -46,7 +46,7 @@ const Actordetails = () => {
       knownFor: [
         {
           id: 1,
-          title: "Master",
+          title: "Dune: Part Two",
           role: "Paul Atreides",
           year: 2024,
           rating: 8.8,
@@ -55,7 +55,7 @@ const Actordetails = () => {
         },
         {
           id: 2,
-          title: "Mersal",
+          title: "Wonka",
           role: "Willy Wonka",
           year: 2023,
           rating: 7.2,
@@ -64,7 +64,7 @@ const Actordetails = () => {
         },
         {
           id: 3,
-          title: "Kathi",
+          title: "Dune",
           role: "Paul Atreides",
           year: 2021,
           rating: 8.0,
@@ -89,13 +89,13 @@ const Actordetails = () => {
     },
     {
       id: 2,
-      name: "vijay Sethupathi",
+      name: "Zendaya",
       birthDate: "September 1, 1996",
-      birthPlace: "Tmailnadu,India",
-      nationality: "Indian",
+      birthPlace: "Oakland, California, USA",
+      nationality: "American",
       height: "5' 10\" (1.78 m)",
       biography:
-        "Vijay Sethupathi is an Tamil Actor who works in Pan Indian Movies as Hero and also in negative roles",
+        "Zendaya is an American actress and singer. She began her career as a child model and backup dancer before gaining prominence for her role as Rocky Blue on the Disney Channel sitcom Shake It Up. She has gone on to star in numerous acclaimed films and television series.",
       image:
         "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
       coverImage:
@@ -154,7 +154,6 @@ const Actordetails = () => {
         },
       ],
     },
-    
   ];
   const { id } = useParams();
   const actor = actors.find((m) => m.id === Number(id)) || actors[0];
