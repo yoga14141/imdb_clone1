@@ -5,23 +5,23 @@ import { Link } from "react-router-dom";
 const featuredMovies = [
   {
     id: 1,
-    title: "Master",
-    rating: 7.4,
+      title: "Dune: Part Two",
+      rating: 8.8,
     releaseDate: "January 13, 2021",
     description:
-      "An alcoholic professor is sent to a juvenile school, where he clashes with a gangster who uses the school children for criminal activities.",
+      "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family...",
     image:
-      "https://live.staticflickr.com/65535/51243613866_200567d84f_b.jpg?auto=format&fit=crop&w=2000&q=80",
+      "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=2000&q=80",
   },
   {
     id: 2,
-    title: "Premalu",
-    rating: 7.8,
+      title: "Poor Things",
+      rating: 8.4,
+      image:
+        "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=800&q=80",
     releaseDate: "February 9, 2024",
     description:
-      "Sachin's quest for love takes unexpected turns, creating a laughter-filled love triangle.",
-    image:
-      "https://static.toiimg.com/thumb/msid-105647632,width-1280,height-720,resizemode-4/105647632.jpg?auto=format&fit=crop&w=2000&q=80",
+      "he story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb during World War II, exploring the moral complexities and consequences of scientific discovery.",
 
   },
   {
